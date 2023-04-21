@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit-Converter</title>
+
+    <!-- Custom CSS File -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <!-- Header Section -->
+    <div class="title">
+        <span>Unit Converter</span>
+        <div class="right_Setting">
+            <img src="/image/moon.png" alt="Setting" id="icon">
+        </div>
+    </div>
+    <!-- End Header -->
+
+    <!-- Main content -->
+    <div id="main_content">
+        <h1 id="quantity_title">Convert Angle</h1>
+        <div id="unitSelector">
+            <div class="unitCaption">Type</div>
+            <div class="unitArea">
+                <select id="selectQuantity" class="selectOption" onchange="loadQuantity(this.value)"></select>
+            </div>
+        </div>
+
+        <!-- Calculate area -->
+        <div id="Calculator">
+            <div class="unitCaption">
+                Form
+                <div class="right_swap">
+                    <img src="/image/swap.png" alt="" onclick="swapUnits()">
+                </div>
+            </div>
+            <div class="unitArea">
+                <div class="leftUnit">
+                    <input type="number" id="inputFrom" class="inputNumber" step="any" value="1" oninput="convert()">
+                </div>
+                <div class="rightUnit">
+                    <select name="" id="selectFrom" class="selectOption inputOption"
+                        onchange="onChangeUnit();"></select>
+                </div>
+            </div>
+
+            <div class="unitCaption"> To</div>
+            <div class="unitArea">
+                <div class="leftUnit">
+                    <input type="number" id="inputTo" class="inputNumber" step="any" value="1" oninput="convertBack()">
+                </div>
+                <div class="rightUnit">
+                    <select name="" id="selectTo" class="selectOption inputOption" onchange="onChangeUnit();"></select>
+                </div>
+                <div id="conversionInfo"><span id="conversionInfoText"></span></div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <a href="https://ishukhan.vercel.app" target="_blank">click Here</a>
+        </footer>
+
+        <!-- Custom JS File -->
+        <script src="./js/main.js"></script>
+    </div>
+</body>
+
+</html>

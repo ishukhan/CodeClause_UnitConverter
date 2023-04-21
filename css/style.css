@@ -1,0 +1,171 @@
+/* import fonts from font.css file */
+@import url(./font.css);
+
+/* Css Variable */
+@import url(./partial/_variable.css);
+
+body{
+    background: var(--primary-color2);
+}
+
+.dark_mode{
+    --primary-color4:#160D83;
+    --secondry-color:#ffff;
+    --primary-color2: #07011A;
+}
+
+
+/* Start Header */
+
+
+.line1{
+    width: 100%;
+    height: 4px;
+    background: var(--primary-color4);
+}
+
+.line2{
+    width: 100%;
+    height: 4px;
+    background: var(--primary-color4);
+}
+
+.title{
+    width: 100%;
+    height: 40px;
+    position: relative;
+    background: var(--primary-color4);
+    text-align: center;
+    letter-spacing: 0.3em;
+    color: var(--secondry-color);
+    text-transform: uppercase;
+    border-radius: 20px;
+}
+.title span{
+    font: normal 700 22px /25px var(--roboto);
+    position:relative ;
+    top:8px;
+}
+
+.title .right_Setting{
+    position: absolute;
+    top: 8px;
+    right: 15px;
+    display: inline-block;
+    width: 18px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.right_Setting img{
+    height: 20px;
+}
+
+#setting_title{
+    padding: 5px;
+    font-size: 15px;
+    background-color: var(--primary-color2);
+    border-bottom: 1px solid #000000;
+}
+
+
+
+/* End  header */
+
+/* Main Section */
+
+
+h1{
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 5px;
+    font-family: var(--roboto);
+    text-transform: uppercase;
+    color: var(--secondry-color);
+}
+
+
+
+.unitCaption{
+    background:var(--primary-color4);
+    position: relative;
+    font-family: var(--roboto);
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    padding: 5px 10px;
+    margin-top: 10px;
+    font-size: 15px;
+    color: var(--secondry-color);
+}
+
+.unitArea{
+    background-color: var(--primary-color4);
+    /* border: 1px solid #000000; */
+    padding: 5px;
+}
+#selectQuantity {
+    width: 100%;
+    outline: none;
+}
+
+.selectOption{
+    height: 25px;
+    font-size: 15px;
+}
+
+
+
+/* Calculator */
+
+.right_swap{
+    position: absolute;
+    top: 6px;
+    right: 10px;
+    display: inline-block;
+    width: 18px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.right_swap img{
+    height: 20px;
+}
+
+.leftUnit{
+    height: 100%;
+    width: 38%;
+    float: left;
+    padding: 0 18px 0 0;
+}
+.inputNumber {
+    width: 100%;
+    height: 19px;
+    font-size: 15px;
+    margin-right: 10px;
+}
+
+.rightUnit{
+    overflow: auto;
+    height: 100%;
+}
+.inputOption {
+    width: 100%;
+    outline: none;
+}
+
+.footer{
+    display: block;
+    padding: 23px 0;
+}
+
+.footer a{
+    font-size: 2rem;
+    text-decoration: none;
+    color: var(--primary-color3);
+    opacity: 0.5;
+    text-transform: capitalize;
+}
+
+.footer a:hover{
+opacity: 1;
+}
